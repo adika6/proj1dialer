@@ -360,7 +360,7 @@ class AboutActivity : BaseSimpleActivity() {
 
             setOnClickListener {
                 val appId = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("com.merebapps.")
-                val url = "https://merebapps.com/privacy/$appId.txt"
+                val url = "https://merebapps.com/privacy-policy/"
                 launchViewIntent(url)
             }
         }
