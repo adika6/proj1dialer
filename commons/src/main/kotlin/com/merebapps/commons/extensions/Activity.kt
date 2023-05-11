@@ -308,7 +308,7 @@ fun Activity.launchUpgradeToProIntent() {
 }
 
 fun Activity.launchMoreAppsFromUsIntent() {
-    launchViewIntent("https://play.google.com/store/apps/dev?id=merebapps")
+    launchViewIntent("https://play.google.com/store/apps/dev?id=mereb+apps")
 }
 
 fun Activity.launchViewIntent(id: Int) = launchViewIntent(getString(id))
@@ -331,7 +331,7 @@ fun Activity.launchViewIntent(url: String) {
 fun Activity.redirectToRateUs() {
     hideKeyboard()
     try {
-        launchViewIntent("market://details?id=${packageName.removeSuffix(".debug")}")
+        launchViewIntent("market://details?id=id=Mereb+Apps")
     } catch (ignored: ActivityNotFoundException) {
         launchViewIntent(getStoreUrl())
     }
