@@ -54,7 +54,9 @@
                 style="@style/MaterialSectionLabelStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/help_us" />
+                android:text="@string/help_us"
+                android:visibility="gone"
+                />
 
             <LinearLayout
                 android:id="@+id/about_help_us_layout"
@@ -123,7 +125,8 @@
                 android:layout_marginTop="@dimen/big_margin"
                 android:layout_marginBottom="@dimen/big_margin"
                 android:text="@string/about_footer"
-                android:textSize="@dimen/bigger_text_size" />
+                android:textSize="@dimen/bigger_text_size"
+                android:visibility="gone"/>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
