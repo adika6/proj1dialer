@@ -224,7 +224,7 @@ open class BaseConfig(val context: Context) {
         set(shouldUseSharedTheme) = prefs.edit().putBoolean(SHOULD_USE_SHARED_THEME, shouldUseSharedTheme).apply()
 
     var isUsingAutoTheme: Boolean
-        get() = prefs.getBoolean(IS_USING_AUTO_THEME, false)
+        get() = prefs.getBoolean(IS_USING_AUTO_THEME, true)
         set(isUsingAutoTheme) = prefs.edit().putBoolean(IS_USING_AUTO_THEME, isUsingAutoTheme).apply()
 
     var isUsingSystemTheme: Boolean
