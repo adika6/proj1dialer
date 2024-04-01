@@ -367,6 +367,22 @@ class AboutActivity : BaseSimpleActivity() {
     }
 
     private fun setupLicense() {
+
+
+
+ inflater?.inflate(R.layout.item_about, null)?.apply {
+            setupAboutItem(this, R.drawable.ic_unhide_vector, R.string.privacy_policy)
+            about_other_layout.addView(this)
+
+            setOnClickListener {
+                val appId = baseConfig.appId.removeSuffix(".debug").removeSuffix(".pro").removePrefix("com.merebapps.")
+                val url = "https://merebapps.com/privacy-policy/"
+                launchViewIntent(url)
+            }
+        }
+
+
+        /*
         inflater?.inflate(R.layout.item_about, null)?.apply {
             setupAboutItem(this, R.drawable.ic_article_vector, R.string.third_party_licences)
             about_other_layout.addView(this)
@@ -380,6 +396,8 @@ class AboutActivity : BaseSimpleActivity() {
                 }
             }
         }
+
+        */
     }
 
     private fun setupVersion() {
